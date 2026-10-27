@@ -48,7 +48,9 @@ export default async function StudentCourse({ params }: { params: Promise<{ id: 
           {course.sessions.map((s) => (
             <li key={s.id} className="rounded border p-4">
               <p className="font-medium">{s.title}</p>
-              <p className="text-sm text-gray-600">{s.startsAt.toLocaleString('en-GB')}</p>
+              <p className="text-sm text-gray-600">
+                {s.startsAt.toLocaleString('en-GB', { timeZone: 'Asia/Kolkata' })}
+              </p>
               <a href={s.meetingLink} target="_blank" rel="noreferrer" className="text-sm text-blue-600 underline">
                 Join meeting
               </a>
