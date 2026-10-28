@@ -1,26 +1,24 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #eff6ff 0%, #f8fafc 45%, #ffffff 100%);
+  background-attachment: fixed;
+  color: #0f172a;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+.grad-hero {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 55%, #0ea5e9 100%);
+}
+.grad-text {
+  background: linear-gradient(90deg, #2563eb, #4f46e5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.grad-0 { background: linear-gradient(135deg, #3b82f6, #6366f1); }
+.grad-1 { background: linear-gradient(135deg, #0ea5e9, #2563eb); }
+.grad-2 { background: linear-gradient(135deg, #6366f1, #a855f7); }
+.grad-3 { background: linear-gradient(135deg, #14b8a6, #0ea5e9); }
+.grad-4 { background: linear-gradient(135deg, #fb7185, #fb923c); }
+.grad-5 { background: linear-gradient(135deg, #10b981, #14b8a6); }
