@@ -22,3 +22,50 @@ body {
 .grad-3 { background: linear-gradient(135deg, #14b8a6, #0ea5e9); }
 .grad-4 { background: linear-gradient(135deg, #fb7185, #fb923c); }
 .grad-5 { background: linear-gradient(135deg, #10b981, #14b8a6); }
+/* ---------- Auth pages (login / register) ---------- */
+.auth-card main { padding: 0; max-width: none; margin: 0; }
+.auth-card h1,
+.auth-card h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.auth-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.6rem;
+  padding: 0.7rem 0.9rem;
+  background: #f8fafc;
+  color: #0f172a;
+}
+.auth-card input:focus,
+.auth-card select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+.auth-card button {
+  width: 100%;
+  border-radius: 0.6rem;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  cursor: pointer;
+}
+.auth-card button:hover { filter: brightness(1.08); }
+.auth-card button:disabled { opacity: 0.6; cursor: not-allowed; }
+.auth-card a { color: #2563eb; font-weight: 500; }
+.auth-card a:hover { text-decoration: underline; }
